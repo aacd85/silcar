@@ -10,43 +10,58 @@
     <title>Productos</title>
 </head>
 <body>
-    <header>
+    <div class="container">
+    <header class="Inicio row">
         <img src="../assets/Logo Silcar/Logo azul.png" class="logo"  alt="logo">
         <nav>
             <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>    
  
     <!--MAIN-->       
-        <main>
+        <main class="productos row">
             <h1 class="titulo"> Productos</h1>           
-        <!--Productos con explicación e imágenes-->                   
-        <div class="contenedor-grid">
-            <img src="../assets/Galones/Ambientador.png" class="imagen-grid" alt="Ambientador">
-        <div class="texto-grid"> 
-                <b class="ambientador">Ambientador</b>: <p>Nuestro ambientador para pisos perfuma y desinfecta. 
-                                    Deja un aroma agradable tras limpiar.</p>
-        </div>  
-        <img src="../assets/Galones/Blanqueador.png" class="imagen-grid" alt="Blanqueador">
-        <div class="texto-grid"> 
-            <b class="blanqueador">Blanqueador</b>: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, et quis dignissimos voluptates id vero deleniti veniam voluptate vel ipsa consequatur quam. Saepe voluptate porro fugiat suscipit impedit? Dolorem, alias.</p>
-        </div>  
-         <img src="../assets/Galones/Cera.png" class="imagen-grid" alt="Cera">
-         <div class="texto-grid"> 
-        <b class="Cera">Cera</b>: <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, architecto tempore ducimus delectus sed atque, nemo perspiciatis exercitationem harum nihil porro illum quos rem quis aperiam quasi consectetur. Soluta, consequatur.</p>
-         </div> 
-        <img src="../assets/Galones/Desengrasante.png" class="imagen-grid" alt="Desengrasante">
-        <div class="texto-grid"> 
-        <b class="Desengrasante">Desengrasante</b>: <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, architecto tempore ducimus delectus sed atque, nemo perspiciatis exercitationem harum nihil porro illum quos rem quis aperiam quasi consectetur. Soluta, consequatur.</p>
-        </div> 
+        <!--Productos con explicación e imágenes-->  
+        <section class="col-lg-3, col-md-3, col-sm-12">
+        <div class="card">
+            <img src="../assets/Galones/Ambientador.png" class="card-img-top-an" alt="Ambientador">
+            <div class="card-body">
+              <h5 class="card-title">Ambientador</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Saber más</a>
             </div>
+            </div>
+            <div class="card">
+            <img src="../assets/Galones/Blanqueador.png" class="card-img-top-an" alt="Blanqueador">
+            <div class="card-body">
+              <h5 class="card-title">Blanqueador</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Saber más</a>
+            </div>
+          </div>  
+          <div class="card">
+            <img src="../assets/Galones/Cera.png" class="card-img-top-an" alt="Cera Autobrillante">
+            <div class="card-body">
+              <h5 class="card-title">Cera Autobrillante</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Saber más</a>
+            </div>
+          </div>  
+          <div class="card">
+            <img src="../assets/Galones/Desengrasante.png" class="card-img-top-an" alt="Desengrasante">
+            <div class="card-body">
+              <h5 class="card-title">Desengrasante</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Saber más</a>
+            </div>
+          </div>  
+        </section>
         </main>
-
-   
+  
         <footer>
             <div class="direccion">Dirección: Calle 183 #55C-12.</div>
             <div class="telefono">Teléfono: 3044019323- 5517772</div>
@@ -54,6 +69,8 @@
             <div class="ciudad">Bogotá-Colombia</div>
 
         </footer>
- 
+  <!--BS-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
 </body>
 </html>

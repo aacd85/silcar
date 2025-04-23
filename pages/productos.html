@@ -4,71 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css"> 
     <title>Productos</title>
 </head>
 <body>
-    <div class="container">
-    <header class="Inicio row">
-        <img src="../assets/Logo Silcar/Logo azul.png" class="logo"  alt="logo">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>    
- 
+    <div class="container-fluid">
+      <header class="row"> 
+        <!--PRUEBA NAV-->
+        <div class="col-lg-9">
+              <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>      
+            <div class="col-lg-3"><img src="../assets/Logo Silcar/Logo azul.png" class="logo"  alt="logo"></div> 
+              </header>
+            <div class="fs-1">Productos</div>    
     <!--MAIN-->       
         <main class="productos row">
-            <h1 class="titulo"> Productos</h1>           
+                                
         <!--Productos con explicación e imágenes-->  
-        <section class="col-lg-3, col-md-3, col-sm-12">
-        <div class="card">
-            <img src="../assets/Galones/Ambientador.png" class="card-img-top-an" alt="Ambientador">
-            <div class="card-body">
-              <h5 class="card-title">Ambientador</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Saber más</a>
-            </div>
+        <section class="card-body">
+          <div class="card-group">
+            <div class="card">
+              <img src="../assets/Galones/Ambientador.png" class="card-img-top" alt="Ambientador">
+              <div class="card-body">
+                <h5 class="card-title">Ambientador</h5>
+                <p class="card-text">Ambientes aromatizados, pisos relucientes y limpios.</p>
+              </div>
             </div>
             <div class="card">
-            <img src="../assets/Galones/Blanqueador.png" class="card-img-top-an" alt="Blanqueador">
-            <div class="card-body">
-              <h5 class="card-title">Blanqueador</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Saber más</a>
+              <img src="../assets/Galones/Blanqueador.png" class="card-img-top" alt="Blanqueador">
+              <div class="card-body">
+                <h5 class="card-title">Blanqueador</h5>
+                <p class="card-text">Espacios libres y desinfectados. Tu ropa más blanca.</p>
+              </div>
             </div>
-          </div>  
-          <div class="card">
-            <img src="../assets/Galones/Cera.png" class="card-img-top-an" alt="Cera Autobrillante">
-            <div class="card-body">
-              <h5 class="card-title">Cera Autobrillante</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Saber más</a>
+            <div class="card">
+              <img src="..//assets/Galones/Cera.png" class="card-img-top" alt="Cera autobrillante">
+              <div class="card-body">
+                <h5 class="card-title">Cera autobrillante</h5>
+                <p class="card-text">Con nuestra cera autobrillante, tendrás pisos brillantes y con un agradable aroma.</p>
+              </div>
             </div>
-          </div>  
-          <div class="card">
-            <img src="../assets/Galones/Desengrasante.png" class="card-img-top-an" alt="Desengrasante">
-            <div class="card-body">
-              <h5 class="card-title">Desengrasante</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Saber más</a>
+              <div class="card">
+              <img src="../assets/Galones/Desengrasante.png" class="card-img-top" alt="Desengrasante">
+              <div class="card-body">
+                <h5 class="card-title">Desengrasante</h5>
+                <p class="card-text">Cocinas como nuevas, sin grasa.</p>
+              </div>
             </div>
-          </div>  
+          </div>
         </section>
+    </section>
         </main>
   
-        <footer>
-            <div class="direccion">Dirección: Calle 183 #55C-12.</div>
-            <div class="telefono">Teléfono: 3044019323- 5517772</div>
-            <div class="mail"> E-mail: indusilcar@gmail.com</div>
-            <div class="ciudad">Bogotá-Colombia</div>
+    <footer class="final">
+          <div class="direccion">Dirección: Calle 183 #55C-12.</div>
+          <div class="telefono">Teléfono: 3044019323- 5517772</div>
+          <div class="mail"> E-mail: indusilcar@gmail.com</div>
+          <div class="ciudad">Bogotá-Colombia</div>
 
-        </footer>
+    </footer>
   <!--BS-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>

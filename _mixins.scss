@@ -1,0 +1,6 @@
+// Media queries para tamaños de pantalla
+@mixin media-min($ancho) {
+  @media (min-width: $ancho) {
+    @content;
+  }
+}

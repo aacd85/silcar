@@ -1,44 +1,24 @@
 .navbar-nav {
-  display: flex;
-  justify-content: space-evenly;
-  width: 135%;
-  flex-wrap: wrap;
-  align-content: baseline;
-  align-items: flex-start;
-  color: $morado;
+    display: flex;
+    width: 2%;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: baseline;
+    color: $morado;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
   .nav-link {
     &.active, &.show {
       color: $morado;
     }
     }
-}
-.navbar-expand-lg {
-  .navbar-collapse {
-    display: flex !important;
-    flex-basis: auto;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: flex-start;
-    align-items: flex-start;
-    justify-content: flex-end;
-  }
-}
-.col-lg-9 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .col-lg-9 .navbar-toggler {
-  order: 1;
-}
-
-.col-lg-9 .navbar-collapse {
   order: 0;
 }
 .logo {
-  width: 70%; /* Ancho del logo en pantallas más grandes (por defecto) */
+  width: 150%;
 }
 
 .form-control {
@@ -105,9 +85,6 @@ form {
     justify-items: stretch;
   }
 }
-.logo {
-  width: 70%;
-}
 .card-group {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -124,6 +101,8 @@ form {
   align-items: center;
   margin: 5px;
   --bs-card-border-width: none;
+  --bs-card-spacer-y: 1rem;
+  --bs-card-spacer-x: 12rem;
 
   img {
     max-width: 50%;
@@ -138,24 +117,53 @@ form {
   }
 }
 .final {
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: $morado;
   color: $verde;
   text-align: center;
   font-size: 14px;
-
-  div {
-    font-size: 14px;
-  }
 }
-.final {
-  display: block;
+.final{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: $morado;
   color: $verde;
   text-align: center;
   font-size: 14px;
-
-  div {
-    font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+.footer-links{
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    }
   }
+
+    li {
+    display: flex;
+    margin: 18px 10px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: space-between;
+    justify-content: space-between;
+}
+      a{
+        color: $verde;
+        text-decoration: none;
+     }
+.footer-info{
+  text-align: center;
+}
+  div{
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
 }

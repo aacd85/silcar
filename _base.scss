@@ -42,14 +42,10 @@ a {
 .p-3 {
   padding: 74px;
 }
-.container-fluid {
-  --bs-gutter-x: -0.5rem;
-  --bs-gutter-y: 0;
-}
 body {
   font-family: $fuente-principal;
   font-size: $tamano-base;
-  color: $negro; // Un color de texto base
+  color: $negro; 
 }
 a {
   text-decoration: none;
@@ -104,8 +100,4 @@ a {
 }
 .p-3 {
   padding: 74px;
-}
-.container-fluid {
-  --bs-gutter-x: -0.5rem;
-  --bs-gutter-y: 0;
 }

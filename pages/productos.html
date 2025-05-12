@@ -11,34 +11,35 @@
     <title>Productos</title>
 </head>
 <body>
-  <div class="container-fluid">
+ 
     <header class="row">
-      <div class="col-lg-9 d-flex flex-column align-items-end">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary w-100">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/productos.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div class="logo-mobile mt-2 d-lg-none">
+          <div class="logo-mobile mt-2 d-lg-none">
           <img src="../assets/Logo Silcar/Logo azul.png" class="img-fluid" alt="logo">
         </div>
       </div>
       <div class="col-lg-3 d-none d-lg-block">
         <img src="../assets/Logo Silcar/Logo azul.png" class="logo" alt="logo">
       </div>
+       <!--<div class="container-fluid"></div>-->
+           <!--<div class="col-lg-9 d-flex flex-column align-items-end">-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../pages/productos.html">Productos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+      </li>
+    </ul>
+  </div>
+</nav>
     </header>
             <div class="fs-1">Productos</div>    
     <!--MAIN-->       
@@ -53,6 +54,7 @@
                 <h5 class="card-title">Ambientador</h5>
                 <p class="card-text">Ambientes aromatizados, pisos relucientes y limpios.</p>
               </div>
+              <button class="buttonpro">Ver detalles</button>
             </div>
             <div class="card">
               <img src="../assets/Galones/Blanqueador.png" class="card-img-top" alt="Blanqueador">
@@ -60,6 +62,7 @@
                 <h5 class="card-title">Blanqueador</h5>
                 <p class="card-text">Espacios libres y desinfectados. Tu ropa más blanca.</p>
               </div>
+              <button class="buttonpro">Ver detalles</button>
             </div>
             <div class="card">
               <img src="..//assets/Galones/Cera.png" class="card-img-top" alt="Cera autobrillante">
@@ -67,6 +70,7 @@
                 <h5 class="card-title">Cera autobrillante</h5>
                 <p class="card-text">Con nuestra cera autobrillante, tendrás pisos brillantes y con un agradable aroma.</p>
               </div>
+              <button class="buttonpro">Ver detalles</button>
             </div>
               <div class="card">
               <img src="../assets/Galones/Desengrasante.png" class="card-img-top" alt="Desengrasante">
@@ -74,19 +78,30 @@
                 <h5 class="card-title">Desengrasante</h5>
                 <p class="card-text">Cocinas como nuevas, sin grasa.</p>
               </div>
+              <button class="buttonpro">Ver detalles</button>
             </div>
           </div>
         </section>
     </section>
         </main>
   
-    <footer class="final">
-          <div class="direccion">Dirección: Calle 183 #55C-12.</div>
-          <div class="telefono">Teléfono: 3044019323- 5517772</div>
-          <div class="mail"> E-mail: indusilcar@gmail.com</div>
-          <div class="ciudad">Bogotá-Colombia</div>
-
-    </footer>
+  <footer class="final">
+     <div class="footer-links">
+         <ul>
+          <li class="footer-item">
+              <a class="inicio-link" aria-current="page" href="../index.html">Inicio</a>
+              <a class="productos-link" href="./pages/productos.html">Productos</a>
+              <a class="contacto-link" href="../pages/contacto.html">Contacto</a>
+           </li>
+        </ul>
+      </div>
+        <div class="footer-info">
+            <div class="direccion">Dirección: Calle 183 #55C-12.</div>
+            <div class="telefono">Teléfono: 3044019323- 5517772</div>
+            <div class="mail"> E-mail: indusilcar@gmail.com</div>
+            <div class="ciudad">Bogotá-Colombia</div>
+        </div>
+</footer>
   <!--BS-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>

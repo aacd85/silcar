@@ -1,10 +1,21 @@
 header.row {
-  display: flex;
-  align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    gap: 0px;
+    justify-items: stretch;
 }
-
+.columna-derecha {
+  justify-self: end;
+  text-align: right;
+}
 nav {
-  width: 70%;
+  width: 100%;
 }
 .cuerpo {
   width: 100%;

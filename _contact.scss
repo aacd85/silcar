@@ -1,0 +1,57 @@
+.iframe{
+width:"600";
+height:"450";
+border:0;
+}
+.contenedor-maps {
+  display: flex;
+  margin-left: 75px;
+  margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+  .contenedor-maps {
+    flex-direction: column;
+    margin-left: 0;
+    margin-bottom: 20px; 
+  }
+}
+@media (max-width: 991px) {
+  .contenedor-maps {
+    flex-direction: column;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+input[type="text"], input[type="tel"], input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+[type=enviar]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    background-color: $verde;
+    text-align: center;
+    color: $negro;
+    border: aliceblue;
+
+        &:hover{
+        transform: scale(1.05) translateY(-5px);
+        box-shadow: 0 4px 8px #ccc;
+        cursor: pointer;
+    }
+}
+[type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    background-color: #d4f0e5;
+;
+    color: $negro;
+    border: aliceblue;
+
+        &:hover{
+        transform: scale(1) translateY(-5px);
+        box-shadow: 0 4px 8px #ccc;
+        cursor: pointer;
+    }
+}

@@ -1,13 +1,13 @@
 header.row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 40px;
     justify-content: space-evenly;
     align-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: baseline;
-    gap: 0px;
+    gap: 500px;
     justify-items: stretch;
 }
 .columna-derecha {

@@ -7,15 +7,14 @@
     color: $morado;
     flex-direction: column;
     justify-content: flex-start;
+    font-size: large;
 }
 
-  .nav-link {
-    &.active, &.show {
-      color: $morado;
-    }
-    }
 .col-lg-9 .navbar-toggler {
   order: 0;
+}
+.navbar-brand { /* Ejemplo de un logo o título a la izquierda */
+    margin-right: auto; /* Empuja el resto de los elementos hacia la derecha */
 }
 .logo {
   width: 150%;
@@ -102,7 +101,7 @@ form {
   margin: 5px;
   --bs-card-border-width: none;
   --bs-card-spacer-y: 1rem;
-  --bs-card-spacer-x: 12rem;
+  --bs-card-spacer-x: 5rem;
 
   img {
     max-width: 50%;
@@ -134,34 +133,8 @@ form {
   margin: 0;
   padding: 0;
 }
-.footer-links{
-  ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    }
-  }
-
-    li {
-    display: flex;
-    margin: 18px 10px;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    align-content: space-between;
-    justify-content: space-between;
-}
-      a{
-        color: $verde;
-        text-decoration: none;
-     }
-.footer-info{
-  text-align: center;
-}
-  div{
-    font-size: 14px;
-    margin-bottom: 6px;
+.text-uppercase mb-4 font-weight-bold footer{
+   color: $verde;
 }
 .img-fluid {
     max-width: 100%;

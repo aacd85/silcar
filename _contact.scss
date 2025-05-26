@@ -55,3 +55,23 @@ input[type="text"], input[type="tel"], input[type="email"] {
         cursor: pointer;
     }
 }
+.ventajas {
+    font: bold;
+    font-size: 30px;
+    color: #753769;
+    text-align: center;
+}
+.buttonpro {
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    //transition: background-color 0.3s ease;
+}
+.text-center {
+    text-align: center !important;
+     color: $morado;
+}

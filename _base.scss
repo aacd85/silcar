@@ -1,26 +1,29 @@
+@use 'variables';
+@use 'mixins';
+
 body {
-  font-family: $fuente-principal;
-  font-size: $tamano-base;
-  color: $negro;
+  font-family: variables.$fuente-principal;
+  font-size: variables.$tamano-base;
+  color: variables.$negro;
 }
 a {
   text-decoration: none;
-  color: $morado;
+  color: variables.$morado;
 }
 .fs-1 {
   font-size: large;
-  color: $morado;
+  color: variables.$morado;
   text-align: center;
 }
 .fs-6 {
-  color: $morado;
+  color: variables.$morado;
   margin-block: revert;
   text-align: center;
   text-decoration: solid;
   font-size: 25px;
 }
 .fs-5 {
-  @include media-min(780px) {
+  @include mixins.media-min(780px) {
     color: #0a0a0a;
     margin-block: revert;
   }
@@ -32,53 +35,53 @@ a {
 }
 .w-100 {
   width: 30% !important;
-  @include media-min(780px) {
+  @include mixins.media-min(780px) {
     width: 30% !important;
   }
 }
 .bg-body-tertiary {
   --bs-bg-opacity: 1;
-  background-color: rgba($blanco, var(--bs-bg-opacity)) !important;
+  background-color: rgba(variables.$blanco, var(--bs-bg-opacity)) !important;
 }
 .p-3 {
   padding: 74px;
 }
 body {
-  font-family: $fuente-principal;
-  font-size: $tamano-base;
-  color: $negro; 
+  font-family: variables.$fuente-principal;
+  font-size: variables.$tamano-base;
+  color: variables.$negro; 
 }
 a {
   text-decoration: none;
-  color: $morado;
+  color: variables.$morado;
 }
 .fs-1 {
   font-size: large;
-  color: $morado;
+  color: variables.$morado;
   text-align: center;
 }
 .fs-5 {
-  @include media-min(780px) {
+  @include mixins.media-min(780px) {
     color: #0a0a0a;
     margin-block: revert;
   }
 }
 body {
-  font-family: $fuente-principal;
-  font-size: $tamano-base;
-  color: $negro; // Un color de texto base
+  font-family: variables.$fuente-principal;
+  font-size: variables.$tamano-base;
+  color: variables.$negro; // Un color de texto base
 }
 a {
   text-decoration: none;
-  color: $morado;
+  color: variables.$morado;
 }
 .fs-1 {
   font-size: large;
-  color: $morado;
+  color: variables.$morado;
   text-align: center;
 }
 .fs-5 {
-  @include media-min(780px) {
+  @include mixins.media-min(780px) {
     color: #0a0a0a;
     margin-block: revert;
   }
@@ -90,7 +93,7 @@ a {
 }
 .bg-body-tertiary {
   --bs-bg-opacity: 1;
-  background-color: rgba($blanco, var(--bs-bg-opacity)) !important;
+  background-color: rgba(variables.$blanco, var(--bs-bg-opacity)) !important;
 }
 .p-3 {
   padding: 74px;

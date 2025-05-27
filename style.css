@@ -120,14 +120,13 @@ a {
 
 header.row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 40px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-content: center;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: baseline;
-  gap: 0px;
   justify-items: stretch;
 }
 
@@ -160,6 +159,9 @@ nav {
   order: 0;
 }
 
+.navbar-brand { /* Ejemplo de un logo o título a la izquierda */
+  margin-right: auto; /* Empuja el resto de los elementos hacia la derecha */
+}
 
 .logo {
   width: 150%;
@@ -255,41 +257,10 @@ form {
   text-align: center;
 }
 
-.final {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: #753769;
-  color: #35e6a1;
-  text-align: center;
-  font-size: 14px;
+.text-uppercase mb-4 font-weight-bold footer {
+  color: #ffffff;
 }
 
-.final {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: #753769;
-  color: #35e6a1;
-  text-align: center;
-  font-size: 14px;
-  margin: 0;
-  padding: 0;
-}
-
-
-li {
-  display: flex;
-  margin: 18px 10px;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: stretch;
-  align-content: space-between;
-  justify-content: space-between;
-}
-
-a {
-  color: #35e6a1;
-  text-decoration: none;
-}
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -374,6 +345,10 @@ input[type=text], input[type=tel], input[type=email] {
 .text-center {
   text-align: center !important;
   color: #753769;
+}
+
+.Texto-secundario {
+  color: #35e6a1;
 }
 
 .maps {

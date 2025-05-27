@@ -1,21 +1,21 @@
+@use 'variables';
 .navbar-nav {
     display: flex;
     width: 2%;
     flex-wrap: nowrap;
     align-content: space-around;
     align-items: baseline;
-    color: $morado;
+    color: variables.$morado;
     flex-direction: column;
     justify-content: flex-start;
+    font-size: large;
 }
 
-  .nav-link {
-    &.active, &.show {
-      color: $morado;
-    }
-    }
 .col-lg-9 .navbar-toggler {
   order: 0;
+}
+.navbar-brand { /* Ejemplo de un logo o título a la izquierda */
+    margin-right: auto; /* Empuja el resto de los elementos hacia la derecha */
 }
 .logo {
   width: 150%;
@@ -28,9 +28,9 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: -1.5;
-  color: $morado;
+  color: variables.$morado;
   appearance: none;
-  background-color: $blanco;
+  background-color: variables.$blanco;
   background-clip: padding-box;
   border: var(--bs-border-width) solid var(--bs-border-color);
   border-radius: var(--bs-border-radius);
@@ -58,15 +58,15 @@
   }
 
   input[type="submit"] {
-    background-color: $verde;
-    color: $blanco;
+    background-color: variables.$verde;
+    color: variables.$blanco;
     padding: 10px 15px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 
     &:hover {
-      background-color: $morado;
+      background-color: variables.$morado;
     }
   }
 }
@@ -102,7 +102,7 @@ form {
   margin: 5px;
   --bs-card-border-width: none;
   --bs-card-spacer-y: 1rem;
-  --bs-card-spacer-x: 12rem;
+  --bs-card-spacer-x: 5rem;
 
   img {
     max-width: 50%;
@@ -116,52 +116,9 @@ form {
     text-align: center;
   }
 }
-.final {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: $morado;
-  color: $verde;
-  text-align: center;
-  font-size: 14px;
-}
-.final{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: $morado;
-  color: $verde;
-  text-align: center;
-  font-size: 14px;
-  margin: 0;
-  padding: 0;
-}
-.footer-links{
-  ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    }
-  }
 
-    li {
-    display: flex;
-    margin: 18px 10px;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    align-content: space-between;
-    justify-content: space-between;
-}
-      a{
-        color: $verde;
-        text-decoration: none;
-     }
-.footer-info{
-  text-align: center;
-}
-  div{
-    font-size: 14px;
-    margin-bottom: 6px;
+.text-uppercase mb-4 font-weight-bold footer{
+   color: variables.$blanco;
 }
 .img-fluid {
     max-width: 100%;

@@ -1,3 +1,4 @@
+@use 'variables';
 .iframe{
 width:"600";
 height:"450";
@@ -31,9 +32,9 @@ input[type="text"], input[type="tel"], input[type="email"] {
 }
 [type=enviar]:not(:disabled), button:not(:disabled) {
     cursor: pointer;
-    background-color: $verde;
+    background-color: variables.$verde;
     text-align: center;
-    color: $negro;
+    color: variables.$negro;
     border: aliceblue;
 
         &:hover{
@@ -46,7 +47,7 @@ input[type="text"], input[type="tel"], input[type="email"] {
     cursor: pointer;
     background-color: #d4f0e5;
 ;
-    color: $negro;
+    color: variables.$negro;
     border: aliceblue;
 
         &:hover{
@@ -54,4 +55,27 @@ input[type="text"], input[type="tel"], input[type="email"] {
         box-shadow: 0 4px 8px #ccc;
         cursor: pointer;
     }
+}
+.ventajas {
+    font: bold;
+    font-size: 30px;
+    color: #753769;
+    text-align: center;
+}
+.buttonpro {
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    //transition: background-color 0.3s ease;
+}
+.text-center {
+    text-align: center !important;
+     color: variables.$morado;
+}
+.Texto-secundario {
+    color: variables.$verde;
 }

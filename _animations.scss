@@ -1,13 +1,4 @@
-.carrusel{
-     transition: transform 0.1s ease, box-shadow 0.3s ease;
-
-    &:hover{
-        transform: scale(1.05) translateY(-5px);
-        box-shadow: 0 4px 8px #f0ededba;
-        cursor: pointer;
-    }
-}   
-
+@use 'variables';
 .maps{
     
      transition: transform 0.1s ease, box-shadow 0.3s ease;
@@ -28,9 +19,9 @@
 }
 [type=buttonpro]:not(:disabled), button:not(:disabled) {
     cursor: pointer;
-    background-color: $verde;
+    background-color: variables.$verde;
     text-align: center;
-    color: $negro;
+    color: variables.$negro;
     border: aliceblue;
 
         &:hover{
